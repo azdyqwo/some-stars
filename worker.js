@@ -3,7 +3,7 @@ addEventListener('fetch', event => {
 });
 
 async function handleRequest(request) {
-  const response = await fetch('https://cdn.jsdelivr.net/gh/YangguangZhou/some-stars@main/data.json');   //这里的xxx修改为自己仓库的json raw文件
+  const response = await fetch('https://cdn.jsdelivr.net/gh/azdyqwo/some-stars@main/data.json');   //这里的xxx修改为自己仓库的json raw文件
   const data = await response.json();
 
   const html = generateHTML(data);
@@ -59,9 +59,9 @@ function generateHTML(data) {
     <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <link rel="icon" href="https://jerryz.com.cn/favicon.png">
+      <link rel="icon" href="https://azqaq.cat/favicon.ico">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jerry Zhou GitHub Stars 导航</title>
+      <title>azQAQ GitHub Stars 导航</title>
       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
       
       <style>
